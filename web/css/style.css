@@ -1,4 +1,8 @@
 /* all pages */
+body {
+  background-color: rgb(255,0,0);
+}
+
 
 footer {
   margin: 20px;
