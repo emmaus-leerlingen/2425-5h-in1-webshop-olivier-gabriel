@@ -73,17 +73,17 @@ insert into brands (code, name, suppliers_id) values ('peu', 'Peugeot', 2);
 insert into brands (code, name, suppliers_id) values ('bet', 'Beta', 1);
 insert into brands (code, name, suppliers_id) values ('apr', 'Aprilia', 1);
 
-insert into suppliers (code, name, address, phonenumber) values ('sup1', 'Motoshop Rdam', 'Weena 10', '010-2734232');
-insert into suppliers (code, name, address, phonenumber) values ('sup2', 'Bromshop Adam', 'Spui 100', '020-8453487');
+insert into suppliers (code, name, address, phonenumber) values ('sup1', 'Bromselect Rdam', 'Weena 10', '010-2734232');
+insert into suppliers (code, name, address, phonenumber) values ('sup2', 'Brommermans Adam', 'Spui 100', '020-8453487');
 
-insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('piazip', 'Piaggio Zip', 'Krachtig', 1, 50, 2, 2022, 2149.99, 1);
-insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('piaski', 'Piaggio Skipper', 'Krachtig', 1, 125, 1, 2019, 1649.99, 2);
-insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('vesspr', 'Vespa Sprint', 'Krachtig', 2, 50, 2, 2023, 3199.99, 3);
-insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('vespri', 'Vespa Primavera', 'Krachtig', 2, 50, 2, 2025, 3099.99, 4);
-insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('yamaer', 'Yamaha Aerox', 'Krachtig', 3, 50, 1, 2020, 1999.99, 5);
-insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('gilrun', 'Gilera Runner', 'Heel rood', 4, 180, 1, 2021, 1449.99, 4);
-insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('lasour', 'La Souris', 'Krachtig', 5, 50, 2, 2023, 2249.99, 3);
-insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('peuspe', 'Peugeot Speedfight', 'Krachtig', 6, 50, 2, 2021, 1849.99, 6);
-insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('betarr', 'Beta RR50', 'Prachtig', 7, 50, 1, 2024, 2589.99, 4);
-insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('aprisr', 'Aprilia SR50', 'Krachtig', 8, 50, 2, 2022, 2049.99, 1);
+insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('piazip', 'Piaggio Zip', 'Stijlvol, compact, innovatief', 1, 50, 2, 2022, 2149.99, 1);
+insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('piaski', 'Piaggio Skipper', ' Robuust, efficiënt, veelzijdig', 1, 125, 1, 2019, 1649.99, 2);
+insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('vesspr', 'Vespa Sprint', ' Retro, luxe, iconisch', 2, 50, 2, 2023, 3199.99, 3);
+insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('vespri', 'Vespa Primavera', 'Verfijnd, stijlvol, shic', 2, 50, 2, 2025, 3099.99, 4);
+insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('yamaer', 'Yamaha Aerox', ' Krachtig, sportief, duurzaam', 3, 50, 1, 2020, 1999.99, 5);
+insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('gilrun', 'Gilera Runner', 'Innovatief, krachtig, stijlvol', 4, 180, 1, 2021, 1449.99, 4);
+insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('lasour', 'La Souris', 'Sportief, betrouwbaar, licht', 5, 50, 2, 2023, 2249.99, 3);
+insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('peuspe', 'Peugeot Speedfight', 'Comfort, design, stevig', 6, 50, 2, 2021, 1849.99, 6);
+insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('betarr', 'Beta RR50', 'Betrouwbaar, snel, populair', 7, 50, 1, 2024, 2589.99, 4);
+insert into products (code, name, description, brands_id, engine_capacity, categories_id, construction_year, price, colors_id) values ('aprisr', 'Aprilia SR50', 'Prestatie, snel, technisch', 8, 50, 2, 2022, 2049.99, 1);
 
