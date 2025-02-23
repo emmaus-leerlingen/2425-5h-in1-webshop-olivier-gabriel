@@ -45,9 +45,9 @@
             </div>
             <div class="card-body">
               <ul class="product-properties">
-                <li><span class="propert-name">Id:</span><span class="product_id_show"></span></li>
-                <li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
-                <li><span class="propert-name">Aantal:</span><span class="product_amount_show"></span></li>
+                <li><span class="propert-name">Code: </span><span class="product_code"></span></li>
+                <li><span class="propert-name">Prijs: </span><span class="product_price"></span></li>
+                <li><span class="propert-name">Aantal: </span><span class="product_amount_show"></span></li>
               </ul>
               <!-- input field needed as parameter for + and - -->
               <input class="product_amount" name="deltaAmount" value="1" type="hidden">
@@ -190,11 +190,11 @@
           const amount = basket[id]
           const product = JSON.parse(localStorage.getItem(`item_${id}`))
           const clone = template.content.cloneNode(true)
+          clone.querySelector(".product_code").textContent = product.code
           clone.querySelector(".product_name").textContent = product.name
           clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
           clone.querySelector(".product_image").src =`images/${product.id}.jpg`
-          clone.querySelector(".product_amount_show").textContent = amount             
-          clone.querySelector(".product_id_show").textContent = product.id             
+          clone.querySelector(".product_amount_show").textContent = amount            
           clone.querySelector(".product_id").value = product.id 
           clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
           //clone.querySelector(".product_amount").value = amount            

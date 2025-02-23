@@ -27,18 +27,23 @@ footer {
 }
 
 .card {
-  width:200px; 
-  height: 700px; 
+  width: 275px; 
+  height: 600px; 
   margin-bottom: 20px
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px; /* Zachte schaduw voor effect */
+  text-align: center;
 }
 
 .card-header {
   height: 5em;
 }
 
-.card-text {
+/*.card-text {
   min-height:10em
-}
+}*/
 
 /* index page */
 .product{

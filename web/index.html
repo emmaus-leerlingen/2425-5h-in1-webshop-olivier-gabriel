@@ -47,7 +47,7 @@
 			<h5>Artikelen</h5>
  			<p>Hier zie je een lijst met artikelen die je bij mij kunt bestellen.</p>
 			<p>klik op een artikel voor meer informatie<p>
-					<p>klik op de "winkelwagentje" om het artikel in je winkelwagen te stoppen</p>
+			<p>klik op de "winkelwagentje" om het artikel in je winkelwagen te stoppen</p>
 		</div>	
     <!-- template for product info-->
   	<template id="productcard">
@@ -58,8 +58,11 @@
 				<div class="card-body">
 					<p class="product_description card-text"></p>
 					<ul class="product-properties">
-						<li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
-						<li><span class="propert-name">Code:</span><span class="product_code"></span></li>
+						<li><span class="propert-name">Merk: </span><span class="product_brand"></span></li>
+						<li><span class="propert-name">Prijs: </span><span class="product_price"></span></li>
+						<li><span class="propert-name">Kleur: </span><span class="product_color"></span></li>
+						<li><span class="propert-name">Motorinhoud(cc): </span><span class="product_engine_capacity"></span></li>
+						<li><span class="propert-name">Bouwjaar: </span><span class="product_construction_year"></span></li>
 					</ul>
 					<input class="product_amount" type="number" value="1" min="1">
 					<input class="product_id" type="hidden" name="id" data-json="">
@@ -120,10 +123,13 @@
               // voeg product toe aan DOM, 
               // zodat deze zichtbaar wordt op de webpagina
               const clone = template.content.cloneNode(true);
-              clone.querySelector(".product_title").textContent = name
-              clone.querySelector(".product_description").textContent =`${product.description.substr(0, 100)}...`
+              clone.querySelector(".product_title").textContent = product.name
+              clone.querySelector(".product_description").textContent = product.description
               clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
-              clone.querySelector(".product_code").textContent = product.code
+              clone.querySelector(".product_color").textContent = product.color
+			  clone.querySelector(".product_brand").textContent = product.brandname
+			  clone.querySelector(".product_engine_capacity").textContent = product.engine_capacity
+			  clone.querySelector(".product_construction_year").textContent = product.construction_year
               clone.querySelector(".product_id").value = product.id
               clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
               clone.querySelector(".product_image").src =`/images/${product.id}.jpg`
